@@ -411,6 +411,9 @@ public:
     /// root to be calculated. Dont call more ofthen than needed
     void    setAcceleration(float acceleration);
 
+    /// Get the acceleration/deceleration rate.
+    float acceleration() const {return _acceleration;}
+
     /// Sets the desired constant speed for use with runSpeed().
     /// \param[in] speed The desired constant speed in steps per
     /// second. Positive is clockwise. Speeds of more than 1000 steps per
